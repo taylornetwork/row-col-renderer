@@ -202,7 +202,7 @@ class Renderer
      */
     protected function defineOpenRow(): string
     {
-        return $this->config('row_col_renderer.define_close_row', '<div class="{row_classes}">');
+        return $this->config('row_col_renderer.define_open_row', '<div class="{row_classes}">');
     }
 
     /**
