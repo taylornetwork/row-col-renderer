@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+use TaylorNetwork\RowColRenderer\Renderer;
+
+class DummyClass extends Renderer
+{
+    protected $model = 'App\\SomeModel';
+
+    public function getView(Model $item): string
+    {
+        return view('someview', ['someModel' => $item]);
+    }
+}

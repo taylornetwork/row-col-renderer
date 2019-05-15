@@ -1,0 +1,37 @@
+{
+  "name": "taylornetwork/row-col-renderer",
+  "require": {
+    "illuminate/support": ">=5.5",
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Taylor",
+      "email": "sam@taylornetwork.ca"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TaylorNetwork\\RowColRenderer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TaylorNetwork\\RowColRenderer\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TaylorNetwork\\RowColRenderer\\RowColServiceProvider"
+      ],
+      "aliases": {
+        "Renderer": "TaylorNetwork\\RowColRenderer\\Facades\\Renderer"
+      }
+    }
+  }
+}
