@@ -12,7 +12,7 @@ class MakeRendererCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'make:renderer {modelName}';
+    protected $signature = 'make:renderer {name}';
     /**
      * The console command description.
      *
