@@ -7,7 +7,7 @@ use TaylorNetwork\RowColRenderer\Renderer;
 
 class DummyClass extends Renderer
 {
-    protected $model = 'App\\SomeModel';
+    protected $model = DummyModel::class;
 
     public function getView(Model $item): string
     {
