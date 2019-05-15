@@ -14,4 +14,8 @@ return [
         'row',
         'text-center',
     ],
+
+    'define_open_row' => '<div class="{row_classes}">',
+
+    'define_close_row' => '</div>',
 ];

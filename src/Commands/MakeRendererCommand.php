@@ -20,6 +20,8 @@ class MakeRendererCommand extends GeneratorCommand
      */
     protected $description = 'Make a model renderer';
 
+    protected $type = 'Model renderer';
+
     protected function getStub()
     {
         return __DIR__ . '/stubs/renderer.stub';
@@ -35,5 +37,9 @@ class MakeRendererCommand extends GeneratorCommand
         return parent::getNameInput() . 'Renderer';
     }
 
-
+    protected function replaceClass($stub, $name)
+    {
+        $name = last(explode('\\', $name));
+        return parent::replaceClass($stub, $name);
+    }
 }
