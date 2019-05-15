@@ -30,10 +30,9 @@ class MakeRendererCommand extends GeneratorCommand
         return config('row_col_renderer.namespace', 'App\\Rendererers');
     }
 
-    protected function getPath($name)
+    protected function getNameInput()
     {
-        $name .= 'Renderer';
-        return parent::getPath($name);
+        return parent::getNameInput() . 'Renderer';
     }
 
 
