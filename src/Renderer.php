@@ -106,6 +106,10 @@ class Renderer
             $this->maxPerRow = $maxPerRow;
         }
 
+        if($this->getItems()->count() === 0) {
+            return '';
+        }
+
         $numberPerRow = $this->getNumberPerRow();
         $totalRows = $this->getTotalRows();
         $itemIterator = 0;

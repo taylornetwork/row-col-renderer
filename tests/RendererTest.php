@@ -57,6 +57,11 @@ class RendererTest extends TestCase
         );
     }
 
+    public function testZeroItems()
+    {
+        $this->assertEmpty(RendererFacade::zeroServices()->render());
+    }
+
     protected function getPackageProviders($app)
     {
         return [RowColServiceProvider::class];
